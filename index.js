@@ -99,7 +99,7 @@ app.post('/login', (req, res) => {
   });
 });
 
-app.delete('/delete', (req, res) => {
+app.post('/delete', (req, res) => {
   const { username } = req.body;
 
   if (!username) {
