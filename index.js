@@ -16,8 +16,16 @@ app.get('/', (req, res) => {
 });
 
 const userRoutes = require('./routes/user');
-
 app.use('/user', userRoutes);
+
+const pollsRoutes = require('./routes/polls');
+app.use('/polls', pollsRoutes);
+
+const tenantsRoutes = require('./routes/tenants');
+app.use('/tenants', tenantsRoutes);
+
+const questionsRoutes = require('./routes/questions');
+app.use('/questions', questionsRoutes);
 
 
 
